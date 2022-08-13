@@ -20,3 +20,7 @@ After that just import the frameork and you can use the aliases:
 ```swift 
 import AliasWonderland
 ```
+
+# 🐇🕳 Rabbit Hole
+
+This project is part of the [🐇🕳 Rabbit Hole Packages Collection](https://github.com/sloik/RabbitHole)
