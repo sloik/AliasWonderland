@@ -9,7 +9,9 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AliasWonderland",
-            targets: ["AliasWonderland"]),
+            type: .dynamic,
+            targets: ["AliasWonderland"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
