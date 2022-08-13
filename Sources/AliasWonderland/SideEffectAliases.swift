@@ -32,11 +32,11 @@ It's a function that takes some input and performs `SideEffect`.
 
  */
 
-public typealias Consumer<I>                          = (I)                              -> SideEffect
-public typealias Consumer2I<I1,I2>                    = (I1, I2)                         -> SideEffect
-public typealias Consumer3I<I1,I2,I3>                 = (I1, I2, I3)                     -> SideEffect
-public typealias Consumer4I<I1,I2,I3,I4>              = (I1, I2, I3, I4)                 -> SideEffect
-public typealias Consumer5I<I1,I2,I3,I4,I5>           = (I1, I2, I3, I4, I5)             -> SideEffect
-public typealias Consumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6)         -> SideEffect
-public typealias Consumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7)     -> SideEffect
-public typealias Consumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) -> SideEffect
+public typealias Consumer<I>                          = (I)                              -> Void
+public typealias Consumer2I<I1,I2>                    = (I1, I2)                         -> Void
+public typealias Consumer3I<I1,I2,I3>                 = (I1, I2, I3)                     -> Void
+public typealias Consumer4I<I1,I2,I3,I4>              = (I1, I2, I3, I4)                 -> Void
+public typealias Consumer5I<I1,I2,I3,I4,I5>           = (I1, I2, I3, I4, I5)             -> Void
+public typealias Consumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6)         -> Void
+public typealias Consumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7)     -> Void
+public typealias Consumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) -> Void
