@@ -17,8 +17,6 @@ import Foundation
 
  */
 
-public typealias SideEffect = Void
-
 public typealias SideEffectClosure = () -> Void
 
 // MARK: - Consumers Closures
@@ -28,7 +26,7 @@ public typealias SideEffectClosure = () -> Void
  # What is a consumer?
 
 It's a function that takes some input and performs `SideEffect`.
- Typicaly you can find them as many `handlers`.
+ Typically you can find them as many `handlers`.
 
  */
 
