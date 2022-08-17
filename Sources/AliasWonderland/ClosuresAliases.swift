@@ -3,7 +3,7 @@
 
 /*:
 
- Alias for function type. Makes signatures of higher order functions more managable.
+ Alias for function type. Makes signatures of higher order functions more manageable.
 
  */
 
@@ -20,7 +20,7 @@ public typealias Closure8I<I1,I2,I3,I4,I5,I6,I7, I8, O> = (I1, I2, I3, I4, I5, I
 /*:
  # Producers
 
- Functions that can return an instacne of some type.
+ Functions that can return an instance of some type.
  */
 
 public typealias Producer<T> = () -> T
@@ -36,5 +36,5 @@ public typealias AsyncClosure6I<I1,I2,I3,I4,I5,I6, O>        = (I1, I2, I3, I4, 
 public typealias AsyncClosure7I<I1,I2,I3,I4,I5,I6,I7, O>     = (I1, I2, I3, I4, I5, I6, I7) async     -> O
 public typealias AsyncClosure8I<I1,I2,I3,I4,I5,I6,I7, I8, O> = (I1, I2, I3, I4, I5, I6, I7, I8) async -> O
 
-/// Asynchronus function returning some value.
+/// Asynchronous function returning some value.
 public typealias AsyncProducer<T> = () async -> T

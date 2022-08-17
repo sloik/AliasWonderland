@@ -28,7 +28,7 @@ public typealias SideEffectClosure = () -> Void
  # What is a consumer?
 
 It's a function that takes some input and performs `SideEffect`.
- Typicaly you can find them as many `handlers`.
+ Typically you can find them as many `handlers`.
 
  */
 
