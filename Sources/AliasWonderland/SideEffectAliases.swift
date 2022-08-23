@@ -17,8 +17,6 @@ import Foundation
 
  */
 
-public typealias SideEffect = Void
-
 public typealias SideEffectClosure = () -> Void
 
 // MARK: - Consumers Closures
