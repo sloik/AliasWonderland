@@ -1,3 +1,7 @@
+![Main](https://github.com/sloik/AliasWonderland/actions/workflows/swift.yml/badge.svg?branch=main)
+![Nightly](https://github.com/sloik/AliasWonderland/actions/workflows/nightly.yml/badge.svg)
+
+
 # AliasWonderland 🧚🏻‍♀️
 
 Often in project you end up defining a lot of the same aliases. This package aims to define them once and reuse them across your project.
