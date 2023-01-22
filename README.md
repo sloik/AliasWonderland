@@ -1,3 +1,5 @@
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fsloik%2FAliasWonderland%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/sloik/AliasWonderland)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fsloik%2FAliasWonderland%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/sloik/AliasWonderland)
 ![Main](https://github.com/sloik/AliasWonderland/actions/workflows/swift.yml/badge.svg?branch=main)
 ![Nightly](https://github.com/sloik/AliasWonderland/actions/workflows/nightly.yml/badge.svg)
 
