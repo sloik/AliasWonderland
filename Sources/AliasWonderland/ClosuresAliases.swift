@@ -16,6 +16,12 @@ public typealias Closure6I<I1,I2,I3,I4,I5,I6, O>        = (I1, I2, I3, I4, I5, I
 public typealias Closure7I<I1,I2,I3,I4,I5,I6,I7, O>     = (I1, I2, I3, I4, I5, I6, I7)     -> O
 public typealias Closure8I<I1,I2,I3,I4,I5,I6,I7, I8, O> = (I1, I2, I3, I4, I5, I6, I7, I8) -> O
 
+public typealias AsyncThrowsClosure<I,O>                = (I) async throws              -> O
+public typealias AsyncThrowsClosure2I<I1,I2,O>          = (I1,I2) async throws          -> O
+public typealias AsyncThrowsClosure3I<I1,I2,I3,O>       = (I1,I2,I3) async throws       -> O
+public typealias AsyncThrowsClosure4I<I1,I2,I3,I4,O>    = (I1,I2,I3,I4) async throws    -> O
+public typealias AsyncThrowsClosure5I<I1,I2,I3,I4,I5,O> = (I1,I2,I3,I4,I5) async throws -> O
+
 // MARK: - Producer Closures
 /*:
  # Producers
