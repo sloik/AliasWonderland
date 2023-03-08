@@ -38,3 +38,14 @@ public typealias Consumer5I<I1,I2,I3,I4,I5>           = (I1, I2, I3, I4, I5)    
 public typealias Consumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6)         -> Void
 public typealias Consumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7)     -> Void
 public typealias Consumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) -> Void
+
+// MARK: - Async Consumer
+
+public typealias AsyncConsumer<I> = (I) async -> Void
+public typealias AsyncConsumer2I<I1,I2> = (I1, I2) async -> Void
+
+// MARK: - Async Throws Consumer
+
+public typealias AsyncThrowsConsumer<I> = (I) async throws -> Void
+public typealias AsyncThrowsConsumer2I<I1,I2> = (I1, I2) async throws -> Void
+
