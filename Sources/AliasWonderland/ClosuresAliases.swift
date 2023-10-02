@@ -16,6 +16,12 @@ public typealias Closure6I<I1,I2,I3,I4,I5,I6, O>        = (I1, I2, I3, I4, I5, I
 public typealias Closure7I<I1,I2,I3,I4,I5,I6,I7, O>     = (I1, I2, I3, I4, I5, I6, I7)     -> O
 public typealias Closure8I<I1,I2,I3,I4,I5,I6,I7, I8, O> = (I1, I2, I3, I4, I5, I6, I7, I8) -> O
 
+public typealias ThrowsClosure<I,O>                = (I) throws              -> O
+public typealias ThrowsClosure2I<I1,I2,O>          = (I1,I2) throws          -> O
+public typealias ThrowsClosure3I<I1,I2,I3,O>       = (I1,I2,I3) throws       -> O
+public typealias ThrowsClosure4I<I1,I2,I3,I4,O>    = (I1,I2,I3,I4) throws    -> O
+public typealias ThrowsClosure5I<I1,I2,I3,I4,I5,O> = (I1,I2,I3,I4,I5) throws -> O
+
 public typealias AsyncThrowsClosure<I,O>                = (I) async throws              -> O
 public typealias AsyncThrowsClosure2I<I1,I2,O>          = (I1,I2) async throws          -> O
 public typealias AsyncThrowsClosure3I<I1,I2,I3,O>       = (I1,I2,I3) async throws       -> O

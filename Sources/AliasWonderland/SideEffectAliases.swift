@@ -39,6 +39,15 @@ public typealias Consumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6)
 public typealias Consumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7)     -> Void
 public typealias Consumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) -> Void
 
+public typealias ThrowsConsumer<I>                          = (I) throws                              -> Void
+public typealias ThrowsConsumer2I<I1,I2>                    = (I1, I2) throws                         -> Void
+public typealias ThrowsConsumer3I<I1,I2,I3>                 = (I1, I2, I3) throws                     -> Void
+public typealias ThrowsConsumer4I<I1,I2,I3,I4>              = (I1, I2, I3, I4) throws                 -> Void
+public typealias ThrowsConsumer5I<I1,I2,I3,I4,I5>           = (I1, I2, I3, I4, I5) throws             -> Void
+public typealias ThrowsConsumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6) throws         -> Void
+public typealias ThrowsConsumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7) throws     -> Void
+public typealias ThrowsConsumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) throws -> Void
+
 // MARK: - Async Consumer
 
 public typealias AsyncConsumer<I> = (I) async -> Void
