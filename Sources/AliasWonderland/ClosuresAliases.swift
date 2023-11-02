@@ -28,6 +28,8 @@ public typealias AsyncThrowsClosure3I<I1,I2,I3,O>       = (I1,I2,I3) async throw
 public typealias AsyncThrowsClosure4I<I1,I2,I3,I4,O>    = (I1,I2,I3,I4) async throws    -> O
 public typealias AsyncThrowsClosure5I<I1,I2,I3,I4,I5,O> = (I1,I2,I3,I4,I5) async throws -> O
 
+public typealias AsyncThrowsClosure2I2O<I1, I2, O1, O2> = (I1,I2) async throws -> (O1, O2)
+
 // MARK: - Producer Closures
 /*:
  # Producers
