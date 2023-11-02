@@ -53,7 +53,8 @@ public typealias AsyncClosure8I<I1,I2,I3,I4,I5,I6,I7, I8, O> = (I1, I2, I3, I4, 
 /// Asynchronous function returning some value.
 public typealias AsyncProducer<T> = () async -> T
 
-public typealias AsyncThrowsProducer<O1, O2> = () async throws -> (O1, O2)
+public typealias AsyncThrowsProducer<O1>        = () async throws -> O1
+public typealias AsyncThrowsProducer2O<O1, O2>  = () async throws -> (O1, O2)
 
 /// Asynchronous function returning some value.
 public typealias SendableAsyncProducer<T> = @Sendable () async -> T
