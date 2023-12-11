@@ -7,12 +7,13 @@
 
  */
 
-public typealias Closure<each I, O>             = (repeat each I) -> O
-
-public typealias ThrowsClosure<each I,O>        = (repeat each I) throws -> O
-
+public typealias Closure<each I, O>           = (repeat each I)              -> O
+public typealias ThrowsClosure<each I,O>      = (repeat each I) throws       -> O
+public typealias AsyncClosure<each I, O>      = (repeat each I) async        -> O
+public typealias AsyncThrowsClosure<each I,O> = (repeat each I) async throws -> O
 
 // MARK: - Producer Closures
+
 /*:
  # Producers
 
@@ -21,15 +22,11 @@ public typealias ThrowsClosure<each I,O>        = (repeat each I) throws -> O
 
 public typealias Producer<T> = () -> T
 
-// MARK: Async
-
-public typealias AsyncClosure<each I, O>        = (repeat each I) async-> O
-public typealias AsyncThrowsClosure<each I,O>   = (repeat each I) async throws -> O
+/// Asynchronous function returning some value.
+public typealias AsyncProducer<each T>         = () async -> (repeat each T)
 
 /// Asynchronous function returning some value.
-public typealias AsyncProducer<each T> = () async -> (repeat each T)
-
-public typealias AsyncThrowsProducer<each O>        = () async throws -> (repeat each O)
+public typealias AsyncThrowsProducer<each T>   = () async throws -> (repeat each T)
 
 /// Asynchronous function returning some value.
 public typealias SendableAsyncProducer<each T> = @Sendable () async -> (repeat each T)
