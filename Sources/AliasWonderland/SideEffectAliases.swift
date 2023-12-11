@@ -30,31 +30,15 @@ It's a function that takes some input and performs `SideEffect`.
 
  */
 
-public typealias Consumer<I>                          = (I)                              -> Void
-public typealias Consumer2I<I1,I2>                    = (I1, I2)                         -> Void
-public typealias Consumer3I<I1,I2,I3>                 = (I1, I2, I3)                     -> Void
-public typealias Consumer4I<I1,I2,I3,I4>              = (I1, I2, I3, I4)                 -> Void
-public typealias Consumer5I<I1,I2,I3,I4,I5>           = (I1, I2, I3, I4, I5)             -> Void
-public typealias Consumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6)         -> Void
-public typealias Consumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7)     -> Void
-public typealias Consumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) -> Void
+public typealias Consumer<each I>       = (repeat each I)        -> Void
+public typealias ThrowsConsumer<each I> = (repeat each I) throws -> Void
 
-public typealias ThrowsConsumer<I>                          = (I) throws                              -> Void
-public typealias ThrowsConsumer2I<I1,I2>                    = (I1, I2) throws                         -> Void
-public typealias ThrowsConsumer3I<I1,I2,I3>                 = (I1, I2, I3) throws                     -> Void
-public typealias ThrowsConsumer4I<I1,I2,I3,I4>              = (I1, I2, I3, I4) throws                 -> Void
-public typealias ThrowsConsumer5I<I1,I2,I3,I4,I5>           = (I1, I2, I3, I4, I5) throws             -> Void
-public typealias ThrowsConsumer6I<I1,I2,I3,I4,I5,I6>        = (I1, I2, I3, I4, I5, I6) throws         -> Void
-public typealias ThrowsConsumer7I<I1,I2,I3,I4,I5,I6,I7>     = (I1, I2, I3, I4, I5, I6, I7) throws     -> Void
-public typealias ThrowsConsumer8I<I1,I2,I3,I4,I5,I6,I7, I8> = (I1, I2, I3, I4, I5, I6, I7, I8) throws -> Void
 
 // MARK: - Async Consumer
 
-public typealias AsyncConsumer<I> = (I) async -> Void
-public typealias AsyncConsumer2I<I1,I2> = (I1, I2) async -> Void
+public typealias AsyncConsumer<each I> = (repeat each I) async -> Void
 
 // MARK: - Async Throws Consumer
 
-public typealias AsyncThrowsConsumer<I> = (I) async throws -> Void
-public typealias AsyncThrowsConsumer2I<I1,I2> = (I1, I2) async throws -> Void
+public typealias AsyncThrowsConsumer<each I> = (repeat each I) async throws -> Void
 
