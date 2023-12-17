@@ -20,13 +20,15 @@ public typealias AsyncThrowsClosure<each I,O> = (repeat each I) async throws -> 
  Functions that can return an instance of some type.
  */
 
-public typealias Producer<T> = () -> T
+public typealias Producer<each T>              = ()                 -> (repeat each T)
+
+public typealias ThrowsProducer<each T>        = () throws          -> (repeat each T)
 
 /// Asynchronous function returning some value.
-public typealias AsyncProducer<each T>         = () async -> (repeat each T)
+public typealias AsyncProducer<each T>         = () async           -> (repeat each T)
 
 /// Asynchronous function returning some value.
-public typealias AsyncThrowsProducer<each T>   = () async throws -> (repeat each T)
+public typealias AsyncThrowsProducer<each T>   = () async throws    -> (repeat each T)
 
 /// Asynchronous function returning some value.
 public typealias SendableAsyncProducer<each T> = @Sendable () async -> (repeat each T)
