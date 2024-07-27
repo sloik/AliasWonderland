@@ -19,6 +19,8 @@ import Foundation
 
 public typealias SideEffectClosure = () -> Void
 
+public typealias MainSideEffectClosure = @MainActor () -> Void
+
 // MARK: - Consumers Closures
 
 /*:
@@ -30,15 +32,19 @@ It's a function that takes some input and performs `SideEffect`.
 
  */
 
-public typealias Consumer<each I>       = (repeat each I)        -> Void
-public typealias ThrowsConsumer<each I> = (repeat each I) throws -> Void
+public typealias Consumer<each I>       =            (repeat each I) -> Void
+public typealias MainConsumer<each I>   = @MainActor (repeat each I) -> Void
+
+public typealias ThrowsConsumer<each I>     =            (repeat each I) throws -> Void
+public typealias MainThrowsConsumer<each I> = @MainActor (repeat each I) throws -> Void
 
 
 // MARK: - Async Consumer
 
-public typealias AsyncConsumer<each I> = (repeat each I) async -> Void
+public typealias AsyncConsumer<each I>      =            (repeat each I) async  -> Void
+public typealias MainAsyncConsumer<each I>  = @MainActor (repeat each I) async  -> Void
 
 // MARK: - Async Throws Consumer
 
-public typealias AsyncThrowsConsumer<each I> = (repeat each I) async throws -> Void
-
+public typealias AsyncThrowsConsumer<each I>        =            (repeat each I) async throws -> Void
+public typealias MainAsyncThrowsConsumer<each I>    = @MainActor (repeat each I) async throws -> Void

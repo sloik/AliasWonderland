@@ -7,10 +7,12 @@
 
  */
 
-public typealias Closure<each I, O>           = (repeat each I)              -> O
-public typealias ThrowsClosure<each I,O>      = (repeat each I) throws       -> O
-public typealias AsyncClosure<each I, O>      = (repeat each I) async        -> O
-public typealias AsyncThrowsClosure<each I,O> = (repeat each I) async throws -> O
+public typealias Closure<each I, O>               =            (repeat each I)              -> O
+public typealias ThrowsClosure<each I,O>          =            (repeat each I) throws       -> O
+public typealias AsyncClosure<each I, O>          =            (repeat each I) async        -> O
+public typealias AsyncThrowsClosure<each I,O>     =            (repeat each I) async throws -> O
+public typealias MainAsyncClosure<each I, O>      = @MainActor (repeat each I) async        -> O
+public typealias MainAsyncThrowsClosure<each I,O> = @MainActor (repeat each I) async throws -> O
 
 // MARK: - Producer Closures
 
@@ -20,15 +22,19 @@ public typealias AsyncThrowsClosure<each I,O> = (repeat each I) async throws -> 
  Functions that can return an instance of some type.
  */
 
-public typealias Producer<each T>              = ()                 -> (repeat each T)
+public typealias Producer<each T>                = ()                  -> (repeat each T)
 
-public typealias ThrowsProducer<each T>        = () throws          -> (repeat each T)
-
-/// Asynchronous function returning some value.
-public typealias AsyncProducer<each T>         = () async           -> (repeat each T)
+public typealias ThrowsProducer<each T>          = () throws           -> (repeat each T)
 
 /// Asynchronous function returning some value.
-public typealias AsyncThrowsProducer<each T>   = () async throws    -> (repeat each T)
+public typealias AsyncProducer<each T>           =            () async -> (repeat each T)
+
+public typealias MainAsyncProducer<each T>       = @MainActor () async -> (repeat each T)
 
 /// Asynchronous function returning some value.
-public typealias SendableAsyncProducer<each T> = @Sendable () async -> (repeat each T)
+public typealias AsyncThrowsProducer<each T>     =            () async throws -> (repeat each T)
+
+public typealias MainAsyncThrowsProducer<each T> = @MainActor () async throws -> (repeat each T)
+
+/// Asynchronous function returning some value.
+public typealias SendableAsyncProducer<each T>   = @Sendable () async -> (repeat each T)
